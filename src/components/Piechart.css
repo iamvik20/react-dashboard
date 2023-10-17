@@ -1,0 +1,39 @@
+.piechart-container {
+    max-height: 400px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    max-width: 450px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0 25px;
+}
+
+.piechart {
+    height: calc(100%);
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    margin-bottom: 10px;
+}
+
+.p-header {
+   width: 100%;
+}
+
+.p-header p {
+    font-size: .8em;
+    color: rgb(201, 201, 201);
+}
+
+
+@media screen and (max-width: 992px) {
+    .piechart-container {
+        width: 300px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.barchart-container {
+    max-width: 720px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    max-height: 400px;
+    margin: 3px;
+}
+
+.select-bar {
+    padding: 3px;
+    background-color: rgb(245, 245, 245) ;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.barchart-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.head p {
+    font-size: .8em;
+    color: rgb(201, 201, 201);
+    font-weight: lighter;
+}
+
+.barchart {
+    width: 660px;
+    height: 40vh;
+}
+
+@media screen and (max-width: 992px) {
+    .barchart {
+        width: 350px;
+        height: 30vh;
+    }
+
+    .barchart-container  {
+        margin: 0;
+    }
+}
+

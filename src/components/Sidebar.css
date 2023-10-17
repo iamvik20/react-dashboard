@@ -1,0 +1,154 @@
+/* Sidebar  */
+#sidebar {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  grid-area: sidebar;
+  font-family: 'Poppins', sans-serif;
+  text-align: start;
+  height: 100%;
+  background-color: #02013E;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.sidebar-title {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  color: rgb(240, 240, 240);
+  margin: 30px 20px 30px 20px;
+}
+
+.sidebar-title>span {
+  display: none;
+}
+
+.sidebar-brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 5px 20px 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(231, 231, 231);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  width: 85%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.logged-box:hover {
+  transform: scale(1.03);
+
+}
+
+.sidebar-list-item>a {
+  text-decoration: none;
+  color: #9e9ea4;
+}
+
+.logged-conatiner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.logged-box {
+  width: 90%;
+  height: 65px;
+  margin-top: 100px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.avatar-title {
+  font-size: 12px;
+  color: #B4B3E2;
+}
+
+.logged-box .avatar-title p:first-child {
+  color: white;
+  font-weight: 500;
+  width: 100px;
+}
+
+.d-down {
+  position: absolute;
+  right: 25px;
+  
+}
+
+.side-arrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+  z-index: 12 !important;
+}
+
+@media screen and (max-width: 992px) {
+  
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .icon {
+    margin-left: 20px;
+  }
+
+  .sidebar-title > span {
+    display: flex;
+    cursor: pointer;
+  }
+}
