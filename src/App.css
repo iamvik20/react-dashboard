@@ -260,5 +260,9 @@ thead th {
 }
 
 @media (max-width: 480px) {
+    .charts {
+        -ms-grid-columns: 1fr auto ;
+        grid-template-rows: 1fr auto;
+    }
     
 }
