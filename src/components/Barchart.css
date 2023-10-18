@@ -41,7 +41,7 @@
 @media screen and (max-width: 992px) {
     .barchart {
         width: 350px;
-        height: 30vh;
+        height: 330px;
     }
 
     .barchart-container  {
