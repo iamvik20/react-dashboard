@@ -1,5 +1,5 @@
 // import React from 'react'
-import CustomLabel from './Customelabel';
+import CustomLabel from './CustomeLabel';
 import './Piechart.css';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Label } from 'recharts';
 
