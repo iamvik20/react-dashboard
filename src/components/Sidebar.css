@@ -1,4 +1,3 @@
-/* Sidebar  */
 #sidebar {
   position: fixed;
   width: 250px;
@@ -10,14 +9,21 @@
   height: 100%;
   background-color: #02013E;
   overflow-y: auto;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
 
 .sidebar-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: rgb(240, 240, 240);
   margin: 30px 20px 30px 20px;
@@ -39,8 +45,12 @@
 
 .sidebar-list-item {
   padding: 5px 20px 10px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: rgb(231, 231, 231);
   font-size: 15px;
@@ -57,7 +67,9 @@
 }
 
 .logged-box:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 
 }
 
@@ -67,9 +79,13 @@
 }
 
 .logged-conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logged-box {
@@ -79,12 +95,18 @@
   margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   padding: 0 10px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; 
 }
 
@@ -115,9 +137,15 @@
 
 .side-arrow {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 
@@ -133,8 +161,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  
-
   #sidebar {
     display: none;
   }
@@ -148,6 +174,8 @@
   }
 
   .sidebar-title > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
   }
